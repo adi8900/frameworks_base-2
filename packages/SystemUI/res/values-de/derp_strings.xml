@@ -86,4 +86,6 @@
     <!-- Label for current user in power menu options dialog -->
     <string name="global_action_current_user">Derzeit</string>
 
+    <string name="status_bar_data_saver">Datensparmodus</string>
+
 </resources>
