@@ -107,5 +107,6 @@ public class SystemSettings {
         Settings.System.VIBRATE_ON_CALLWAITING,
         Settings.System.VIBRATE_ON_DISCONNECT,
         Settings.System.LOCKSCREEN_MEDIA_METADATA,
+        Settings.System.DOZE_ON_CHARGE,
     };
 }
