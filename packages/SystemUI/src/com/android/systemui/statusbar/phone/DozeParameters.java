@@ -28,6 +28,7 @@ import com.android.systemui.R;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.doze.AlwaysOnDisplayPolicy;
 import com.android.systemui.doze.DozeScreenState;
+import com.android.systemui.tuner.TunerService;
 
 import java.io.PrintWriter;
 
@@ -156,7 +157,7 @@ public class DozeParameters implements
      * @return {@code true} if enabled and available.
      */
     public boolean getAlwaysOn() {
-        return mAmbientDisplayConfiguration.alwaysOnEnabled(UserHandle.USER_CURRENT);
+        return mAmbientDisplayConfiguration.alwaysOnEnabled(UserHandle.USER_CURRENT) ? true : false;
     }
 
     /**
@@ -199,7 +200,11 @@ public class DozeParameters implements
         return mResources.getBoolean(R.bool.doze_double_tap_reports_touch_coordinates);
     }
 
+    public void onTuningChanged(String key, String newValue) {
+    }
+
     public AlwaysOnDisplayPolicy getPolicy() {
         return mAlwaysOnPolicy;
     }
+
 }
