@@ -232,5 +232,6 @@ public class SystemSettingsValidators {
         VALIDATORS.put(System.TORCH_LONG_PRESS_POWER_GESTURE, BOOLEAN_VALIDATOR);
         VALIDATORS.put(System.TORCH_LONG_PRESS_POWER_TIMEOUT, NON_NEGATIVE_INTEGER_VALIDATOR);
         VALIDATORS.put(System.SMART_SPACE, BOOLEAN_VALIDATOR);
+        VALIDATORS.put(System.RINGTONE_VIBRATION_PATTERN, new InclusiveIntegerRangeValidator(0, 4));
     }
 }

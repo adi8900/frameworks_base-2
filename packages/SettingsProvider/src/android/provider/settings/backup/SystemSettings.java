@@ -99,5 +99,6 @@ public class SystemSettings {
         Settings.System.TORCH_LONG_PRESS_POWER_GESTURE,
         Settings.System.TORCH_LONG_PRESS_POWER_TIMEOUT,
         Settings.System.SMART_SPACE,
+        Settings.System.RINGTONE_VIBRATION_PATTERN,
     };
 }
